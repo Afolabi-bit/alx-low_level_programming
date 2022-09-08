@@ -6,11 +6,17 @@
 [“C” Programming Language: Brian Kernighan](https://www.youtube.com/watch?v=de2Hsvxaf8M)
 
 [Programming Is Awesome](https://www.youtube.com/watch?v=smGalmxPVYc)
+
 [Learning to program in C part 1](https://www.youtube.com/watch?v=rk2fK2IIiiQhttps://www.youtube.com/watch?v=rk2fK2IIiiQ)
+
 [Part 2](https://www.youtube.com/watch?v=FwpP_MsZWnUhttps://www.youtube.com/watch?v=FwpP_MsZWnU)
+
 [Understanding C program compilation process](https://alx-intranet.hbtn.io/rltoken/idYJyVfQRZ9e5aljiT5UKg)
+
 [Betty coding style](https://github.com/holbertonschool/Betty/wiki)
+
 [Hash-bang under the hood](https://twitter.com/unix_byte/status/1024147947393495040?s=21)
+
 [Linus Torvalds on C vs C++](http://harmful.cat-v.org/software/c++/linus)
 
 | Task Name | Requirement |
