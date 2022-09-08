@@ -1,21 +1,25 @@
 /*
  *File: 6-size.c
+ *
  *Author: Afolabi
  */
 
 #include <stdio.h>
 
 /*
- *main - Prints the size of various types on the computer it is compiled and run on.
+ *main - Prints the size of various types.
+ *
  *Return: Always returns 0.
  */
 int main(void)
 {
 
-	printf("sizeof(int)");
-	printf("sizeof(char)");
-	printf("sizeof(double)");
-	printf("sizeof(float)");
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of a int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	
 	
 	return (0);
 }
