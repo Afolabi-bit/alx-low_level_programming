@@ -9,7 +9,8 @@
 
 
 /**
- * Description: Writes a string of text
+ * main- Writes a string of text
+ *@str: The string to be printed
  *
  * Return: terminates the function
  */
