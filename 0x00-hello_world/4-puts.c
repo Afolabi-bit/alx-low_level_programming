@@ -1,4 +1,4 @@
-/**
+/*
  * File_name: 4-puts.c 
  * Function: Prints a string
  *
@@ -9,16 +9,19 @@
 
 
 /**
- * main- Writes a string of text
- *@str: The string to be printed
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line. 
+ *@str: The string to be printed.
  *
- * Return: terminates the function
+ * Return: Always 0.
  */
 int main(void)
 {
+
 	char str[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(str);
 
 	return (0);
+
 }
