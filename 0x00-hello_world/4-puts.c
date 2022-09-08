@@ -1,17 +1,20 @@
-#include <stdio.h>
 /**
- * Prints a string
+ * File_name: 4-puts.c 
+ * Function: Prints a string
  *
  */
 
+
+#include <stdio.h>
+
+
+/**
+ * Description: Writes a string of text
+ *
+ * Return: terminates the function
+ */
 int main(void)
 {
-	/**
-	 * This function prints a string
-	 *
-	 * Return: 0 to terminate execution
-	 */
-	
 	char str[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(str);
