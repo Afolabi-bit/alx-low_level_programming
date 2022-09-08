@@ -12,7 +12,7 @@ int main(void)
 	 * Return: 0 to terminate execution
 	 */
 	
-	char str[] = "/"Programming is like building a multilingual puzzle";
+	char str[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(str);
 
