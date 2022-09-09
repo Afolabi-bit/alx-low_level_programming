@@ -8,10 +8,19 @@ int main(void)
 {
 	char c = 'a';
 
-	while (c <= 'z' && c != 'q' && c != 'e')
+	while (c <= 'z')
 	{
-		putchar(c);
-		c++;
+		if (c == 'e')
+		{
+			c++
+		} else if (c == 'q')
+		{
+			c++
+		} else
+		{
+			putchar(c);
+			c++;
+		}
 	}
 
 	putchar('\n');
