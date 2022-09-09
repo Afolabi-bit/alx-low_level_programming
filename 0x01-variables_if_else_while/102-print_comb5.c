@@ -6,30 +6,25 @@
  */
 int main(void)
 {
-	int a1, b1, a2, b2;
+	int a, b, c, d, i, j;
 
-	for (a1 = 0; a1 < 10; a1++)
+	for (i = 0; i < 99; i++)
 	{
-		for (b1 = a1; b1 < 10; b1++)
+		for (j = i + 1; j < 99; i++)
 		{
-			b2 = a1 + 1;
-			for (a2 = 0; a2 < 10; a2++)
+			a = i / 10;
+			b = i % 10;
+			putchar(a + '0');
+			putchar(b + '0');
+			putchar(' ');
+			c = j / 10;
+			d = j % 10;
+			putchar(c + '0');
+			putchar(d + '0');
+			if (!(a == 98 && b == 99))
 			{
-				for (; b2 < 10; b2++)
-				{
-					putchar(a1 + '0');
-					putchar(b1 + '0');
-					putchar(' ');
-					putchar(a2 + '0');
-					putchar(b2 + '0');
-
-					if (!((a1 != 9) || (b1 != 9) || (a2 != 8) || (b2 != 9)))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				b2 = 0;
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
