@@ -10,16 +10,9 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		if (c == 'e')
-		{
-			c++;
-		} else if (c == 'q')
-		{
-			c++;
-		} else
+		if (c != 'e' && c != 'q')
 		{
 			putchar(c);
-			c++;
 		}
 	}
 
