@@ -17,7 +17,7 @@ int main(void)
 			d1 = n / 10;
 			d2 = n % 10;
 			putchar(d1 + '0');
-			putchar(d2 + '0';
+			putchar(d2 + '0');
 			putchar(' ');
 			d3 = m / 10;
 			d4 = m % 10;
