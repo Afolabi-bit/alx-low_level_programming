@@ -12,10 +12,10 @@ int main(void)
 	{
 		if (c == 'e')
 		{
-			c++
+			c++;
 		} else if (c == 'q')
 		{
-			c++
+			c++;
 		} else
 		{
 			putchar(c);
