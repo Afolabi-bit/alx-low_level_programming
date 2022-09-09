@@ -1,4 +1,4 @@
-nt ld = n % 10;#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
