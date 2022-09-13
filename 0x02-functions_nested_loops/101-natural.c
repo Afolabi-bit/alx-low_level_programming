@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Computes sum
@@ -18,6 +19,5 @@ int main(void)
 		}}
 	}
 	printf("%d\n", total);
-
 	return (0);
 }
