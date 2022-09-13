@@ -6,3 +6,4 @@
  * Return: Always 1 for success, -1 for error.
  */
 int _putchar(char c);
+void print_alphabet(void);
