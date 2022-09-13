@@ -23,6 +23,10 @@ int main(void)
 		{
 			print_sum += num;
 		}
+		if (print_sum >= 4613732)
+		{
+			break;
+		}
 	}
 	printf("%ld\n", print_sum);
 	return (0);
