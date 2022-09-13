@@ -3,5 +3,5 @@
 
 void _putchar(char* ch)
 {
-	printf("ch");
+	printf("%s", ch);
 }
