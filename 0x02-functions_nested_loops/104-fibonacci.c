@@ -18,7 +18,7 @@ int main(void)
 	{
 		if (i != 98)
 		{
-			printf("%d, ", num);
+			printf("%ld, ", num);
 			sum = num + sum;
 			num = seq;
 			seq = sum;
