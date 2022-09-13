@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <unistd.h>
 #include <string.h>
 
-void _putchar(char* ch)
+int _putchar(char ch)
 {
-	printf("%s", ch);
+	return (write(1, &ch, 1);
 }
