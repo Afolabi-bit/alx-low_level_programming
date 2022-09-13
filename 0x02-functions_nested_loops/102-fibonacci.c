@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 	long int num = 1;
-	long int seq = 2
+	long int seq = 2;
 	long int sum = 0;
 
 	for (i = 1; i <= 50; i++)
