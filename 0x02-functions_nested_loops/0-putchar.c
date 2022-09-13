@@ -5,7 +5,7 @@
  * Return: Zero
  */
 int main(void)
-{	
+{
 	char a[] = "_putchar";
 	int i = 0;
 
