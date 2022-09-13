@@ -7,26 +7,35 @@
  */
 int main(void)
 {
-	unsigned long num, seq, sum;
-	int i;
+	unsigned long int a, a1, a2, b, b1, b2, c, c1, c2, d, e;
 
-	num = 1;
-	seq = 2;
-	sum = 0;
+	a = 1;
+	b = 2;
+	c = a + b;
 
-	for (i = 1; i <= 98; i++)
+	printf("%lu, ", a);
+	printf("%lu, ", b);
+	for (d = 3; d < 89; d++)
 	{
-		if (i != 98)
-		{
-			printf("%ld, ", num);
-			sum = num + seq;
-			num = seq;
-			seq = sum;
-		}
-		else
-		{
-			printf("%ld\n", num);
-		}
+		printf("%lu, ", c);
+		a = b;
+		b = c;
+		c = a + b;
 	}
+	b1 = b / 1000000000;
+	b2 = b % 1000000000;
+	c1 = c / 1000000000;
+	c2 = c % 1000000000;
+	for (e = 89; e < 98; e++)
+	{
+		printf("%lu%lu, ", c1, c2);
+		a1 = b1;
+		a2 = b2;
+		b1 = c1;
+		b2 = c2;
+		c1 = a1 + b1 + ((a2 + b2) / 1000000000);
+		c2 = (a2 + b2) % 1000000000;
+	}
+	printf("%lu%lu\n", c1, c2);
 	return (0);
 }
