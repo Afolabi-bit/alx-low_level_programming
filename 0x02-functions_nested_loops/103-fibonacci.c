@@ -22,7 +22,7 @@ int main(void)
 		if ((num % 2) == 0)
 		{
 			checker = print_sum;
-			if (checker >= 4613732)
+			if (checker >= 400000)
 			{
 				break;
 			}
