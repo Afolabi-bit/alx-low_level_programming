@@ -23,7 +23,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d\n", num);
+			printf("%ld\n", num);
 		}
 	}
 	return (0);
