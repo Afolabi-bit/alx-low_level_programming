@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 4-isalpha - Checks if it is alpha
+ * _isalpha - Checks if it is alpha
  * Description: Checks letters
  * @c: Param
  * Return: Zero
