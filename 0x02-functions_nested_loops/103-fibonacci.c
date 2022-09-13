@@ -22,10 +22,10 @@ int main(void)
 		if ((num % 2) == 0)
 		{
 			print_sum += num;
-		}
-		if (print_sum >= 4613732)
-		{
-			break;
+			if (print_sum >= 4613732)
+			{
+				break;
+			}
 		}
 	}
 	printf("%ld\n", print_sum);
