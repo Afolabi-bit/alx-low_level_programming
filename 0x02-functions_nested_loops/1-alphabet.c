@@ -5,20 +5,19 @@
  * print_alphabet - Prints the alphabet in lowercase
  * Return: Zero
  */
-void print_alphabet(void);
+void print_alphabet(void)
+{
+	char i;
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
+
+}
 int main(void)
 {
 	print_alphabet();
 
 	return (0);
-}
-void print_alphabet(void)
-{
-	char i = 'a';
-	while(i <= 'z')
-	{
-		_putchar(i);
-		i++;
-	}
-	_putchar('\n');
 }
