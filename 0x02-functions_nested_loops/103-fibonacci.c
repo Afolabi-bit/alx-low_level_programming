@@ -21,11 +21,11 @@ int main(void)
 		seq = sum;
 		if ((num % 2) == 0)
 		{
-			print_sum += num;
 			if (print_sum >= 4613732)
 			{
 				break;
 			}
+			print_sum += num;
 		}
 	}
 	printf("%ld\n", print_sum);
