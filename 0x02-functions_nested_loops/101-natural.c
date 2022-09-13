@@ -9,7 +9,9 @@
 int main(void)
 {
 	int i;
-	int total = 0;
+	int total;
+
+	total = 0;
 
 	for (i = 0; i < 1024; i++)
 	{
