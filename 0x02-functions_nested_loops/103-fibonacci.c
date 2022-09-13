@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int i, num, seq, sum, print_sum;
+	long int i, num, seq, sum, print_sum, checker;
 
 	seq = 2;
 	sum = 0;
@@ -21,11 +21,12 @@ int main(void)
 		seq = sum;
 		if ((num % 2) == 0)
 		{
-			if (print_sum >= 4613732)
+			if (checker >= 4613732)
 			{
 				break;
 			}
 			print_sum += num;
+			checker = print_num
 		}
 	}
 	printf("%ld\n", print_sum);
