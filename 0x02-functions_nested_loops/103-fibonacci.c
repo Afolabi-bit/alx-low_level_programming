@@ -7,24 +7,21 @@
  */
 int main(void)
 {
-	long int i, num, seq, sum, print_sum, checker;
-	
+	long int i, num, seq, sum;
+
 	num = 1;
 	seq = 2;
 	sum = 0;
-	print_sum = 0;
-
-
 	for (i = 1; i <= 33; i++)
 	{
 		if ((num % 2) == 0 && num < 4000000)
 		{
-			sum += num;	
+			sum += num;
 		}
 		sum = num + seq;
 		num = seq;
 		seq = sum;
 	}
-	printf("%ld\n", print_sum);
+	printf("%ld\n", sum);
 	return (0);
 }
