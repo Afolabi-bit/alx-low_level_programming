@@ -5,8 +5,8 @@
  * Return: Zero
  */
 int main(void)
-{	char* c = "_putchar";
-	char* nwl = "\n";
+{	char c = "_putchar";
+	char nwl = "\n";
 	_putchar(c);
 	_putchar(nwl);
 
