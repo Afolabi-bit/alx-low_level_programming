@@ -1,7 +1,12 @@
 #include <unistd.h>
 #include <string.h>
 
-int _putchar(char ch)
+/**
+ * _putchar - writes a character c to stdout
+ * @c: The character to print
+ * Return: Always 1 for success, -1 for error.
+ */
+int _putchar(char c)
 {
-	return (write(1, &ch, 1));
+	return (write(1, &c, 1));
 }
