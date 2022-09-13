@@ -14,12 +14,12 @@ int main(void)
 	seq = 2;
 	sum = 0;
 
-	for (i = 0; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		if (i != 98)
 		{
 			printf("%ld, ", num);
-			sum = num + sum;
+			sum = num + seq;
 			num = seq;
 			seq = sum;
 		}
