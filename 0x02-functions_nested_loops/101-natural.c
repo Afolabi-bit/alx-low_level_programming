@@ -17,7 +17,7 @@ int main(void)
 			total += i;
 		}}
 	}
-	printf("%d\n", toatl);
+	printf("%d\n", total);
 
 	return (0);
 }
