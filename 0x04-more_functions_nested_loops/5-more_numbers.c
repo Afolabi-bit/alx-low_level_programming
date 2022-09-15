@@ -22,9 +22,9 @@ void more_numbers(void)
 				_putchar('0' + a);
 				_putchar('0' + b);
 			}
-			j++
+			j++;
 		}
 		_putchar('\n');
-		i++
+		i++;
 	}
 }
