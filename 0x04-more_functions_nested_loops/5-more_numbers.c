@@ -7,15 +7,15 @@
  */
 void more_numbers(void)
 {
-	int i = 0, j = 0;
+	int i = 1, j = 0;
 
-	while (i < 10)
+	while (i <= 10)
 	{
 		while (j < 15)
 		{
 			int a, b;
 			
-			if (j > 9)
+		if (j > 9)
 			{
 				a = j /10;
 				b = j % 10;
