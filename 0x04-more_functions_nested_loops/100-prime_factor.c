@@ -11,14 +11,28 @@ int main(void)
 
 	num = 612852475143;
 	f = 2;
-
-	while (f <= num)
+	if (num % 2 == 0)
 	{
-		if (num % f == 0)
+		while (num % 2 == 0)
 		{
-			num /= f;
+			f = 2;
+			num = num / 2;
 		}
-		f++;
+	}
+	else
+	{
+		for (i = 3; i <= num; i += 2)
+		{
+			while (num % i == 0)
+			{
+				f = i;
+				num = num / i;
+			}
+		}
+	}
+	if (num > 2)
+	{
+		f = num;
 	}
 	printf("%ld\n", f);
 
