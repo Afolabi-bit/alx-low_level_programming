@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints numbers from 1 - 100
@@ -24,7 +25,7 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
-		else if (i == 100)
+		else if (i == '100')
 		{
 			printf("%d", i);
 		}
@@ -34,6 +35,7 @@ int main(void)
 		}
 		i++;
 	}
-	printf('\n');
+	_putchar('\n');
+
 	return (0);
 }
