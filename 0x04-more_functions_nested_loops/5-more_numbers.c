@@ -15,7 +15,7 @@ void more_numbers(void)
 		{
 			int a, b;
 			
-		if (j > 9)
+			if (j > 9)
 			{
 				a = j /10;
 				b = j % 10;
