@@ -26,9 +26,8 @@ void print_number(int n)
 		b /= 10;
 		count *= 10;
 	}
-	while (count >= 1)
+	for (; c >= 1; c /= 10)
 	{
-		_putchar(((a / count) % 10) + '0');
-		count /= 10;
+		_putchar(((a / c) % 10) + '0');
 	}
 }
