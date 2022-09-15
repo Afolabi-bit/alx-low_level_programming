@@ -4,6 +4,7 @@
  * _putchar - writes a character c to stdout
  * @c: The character to print
  */
+int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
