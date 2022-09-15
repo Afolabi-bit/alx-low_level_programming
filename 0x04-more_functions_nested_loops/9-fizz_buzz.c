@@ -8,21 +8,21 @@
  */
 int main(void)
 {
-	int i = 1;
+	int i;
 
-	for (; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("FizzBuzz");
+			printf("%s", "FizzBuzz");
 		}
-		else if (i % 3 == 0)
+		else if ((i % 3) == 0)
 		{
-			printf("Fizz");
+			printf("%s", "Fizz");
 		}
-		else if (i % 5 == 0)
+		else if ((i % 5) == 0)
 		{
-			printf("Buzz");
+			printf("%s", "Buzz");
 		}
 		else
 		{
@@ -32,9 +32,7 @@ int main(void)
 		{
 			printf(" ");
 		}
-
 	}
-	_putchar('\n');
-
+	printf("\n");
 	return (0);
 }
