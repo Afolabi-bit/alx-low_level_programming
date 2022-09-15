@@ -5,7 +5,7 @@
  * @a: First int
  * @b: Second int
  * Description: Mutiplies integers
- * Return: Value of multiplication
+ * Return: res
  */
 int mul(int a, int b)
 {
