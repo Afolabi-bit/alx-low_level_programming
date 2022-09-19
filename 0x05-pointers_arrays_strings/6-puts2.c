@@ -2,7 +2,7 @@
 
 /**
  * puts2 - prints even characters
- * @str - param
+ * @str: param
  * Return: void
  */
 void puts2(char *str)
@@ -14,9 +14,13 @@ void puts2(char *str)
 		i++;
 	}
 	j = i;
-	if (j % 2 == 0)
+	while (str[j] != '\0')
 	{
-		_putchar(str[j]);
+		if (j % 2 == 0)
+		{
+			_putchar(str[j]);
+		}
+		j++
 	}
 	_putchar('\n');
 }
