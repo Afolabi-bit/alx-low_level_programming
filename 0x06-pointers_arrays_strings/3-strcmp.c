@@ -14,7 +14,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		i++;
 	}
-	if (s1 != s2)
+	if (*s1 != *s2)
 	{
 		x = *s1 - *s2;
 	}
