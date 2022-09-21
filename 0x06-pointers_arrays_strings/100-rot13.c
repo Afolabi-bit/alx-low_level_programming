@@ -13,9 +13,9 @@ char *rot13(char *s)
 	while (s[i] != '\0')
 	{
 		j = 0;
-		while (s[j] >= 'a' && s[j] <= 'z' || s[j] == 'A' && s[j] == 'Z')
+		while ((s[j] >= 'a' && s[j] <= 'z') || (s[j] == 'A' && s[j] == 'Z'))
 		{
-			if (s[j] >= 'a' && s[j] >= 'm' || s[j] >= 'A' && s[j] <= 'M')
+			if ((s[j] >= 'a' && s[j] >= 'm') || (s[j] >= 'A' && s[j] <= 'M'))
 			{
 				s[j] += 13;
 			}
@@ -25,5 +25,7 @@ char *rot13(char *s)
 			}
 			j++;
 		}
+		i++;
 	}
+	return (s);
 }
