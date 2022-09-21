@@ -16,7 +16,7 @@ void print_number(int n)
 	}
 	else
 	{
-		x = n;
+		a = n;
 	}
 	b = a;
 	c = 1;
