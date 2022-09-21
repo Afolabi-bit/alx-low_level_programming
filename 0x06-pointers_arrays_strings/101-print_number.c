@@ -20,7 +20,7 @@ void print_number(int n)
 	}
 	b = a;
 	c = 1;
-	while (y > 9)
+	while (b > 9)
 	{
 		b /= 10;
 		c *= 10;
