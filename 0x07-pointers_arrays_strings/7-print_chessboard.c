@@ -7,18 +7,18 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, e;
+	int m, n;
 
-	while (*a)
+	m = 0;
+	while (a[m][7])
 	{
-		i = 0;
-		while ((*a)[i] < (*a)[8])
+		n = 0;
+		while (n < 8)
 		{
-			e = (*a)[i];
-			_putchar(e);
-			i++;
+			_putchar(a[m][n]);
+			n++;
 		}
 		_putchar('\n');
-		a++;
+		m++;
 	}
 }
