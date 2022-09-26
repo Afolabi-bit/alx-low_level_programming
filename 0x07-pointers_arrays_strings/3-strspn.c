@@ -19,10 +19,10 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 	}
-	if (*accept == *s)
+	/*if (*accept == *s)
 	{
 		x = s;
-	}
+	}*/
 
 	return (x);
 }
