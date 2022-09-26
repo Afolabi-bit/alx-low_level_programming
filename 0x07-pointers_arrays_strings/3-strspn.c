@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (*accept == *s)
 		{
 			x++;
-			accept;
+			accept++;
 		}
 		s++;
 	}
