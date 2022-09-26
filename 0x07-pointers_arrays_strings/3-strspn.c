@@ -19,5 +19,9 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 	}
+	if (*s == *accept)
+	{
+		x++;
+	}
 	return (x);
 }
