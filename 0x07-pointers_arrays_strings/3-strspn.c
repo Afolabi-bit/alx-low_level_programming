@@ -23,10 +23,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 	}
-	if (*s == "" || *accept == "")
-	{
-		x = 0;
-	}
-
 	return (x);
 }
