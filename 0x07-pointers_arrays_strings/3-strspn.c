@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			else if (*(accept + 1) = '\0')
 			{
-				x = x;
+				return (x);
 			}
 			accept++;
 		}
