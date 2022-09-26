@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 	}
-	if (*s == '\0')
+	if (*s == '\0' || *accept == '\0')
 	{
 		x = 0;
 	}
