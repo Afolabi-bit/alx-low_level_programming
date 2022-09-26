@@ -17,6 +17,10 @@ unsigned int _strspn(char *s, char *accept)
 			x++;
 			accept++;
 		}
+		else if (*accept == '\0')
+		{
+			break;
+		}
 		s++;
 	}
 	if (*s == *accept)
