@@ -12,10 +12,10 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s != '\0')
 	{
-		if (*s == *c)
+		if (*s == *accept)
 		{
 			x++;
-			c++;
+			accept++;
 		}
 		s++;
 	}
