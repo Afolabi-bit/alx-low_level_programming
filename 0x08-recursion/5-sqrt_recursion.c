@@ -5,7 +5,6 @@
  * @n: interger
  * Return: Sq root
  */
-int sq(int num, int root);
 int _sqrt_recursion(int n)
 {
 	return (sq(n, 1));
@@ -15,7 +14,7 @@ int _sqrt_recursion(int n)
  * sq - finds the square of numbers and compares
  * @num: number
  * @root: root
- * Return: square root of num or -1
+ * Return: sq root or -1
  */
 int sq(int num, int root)
 {
