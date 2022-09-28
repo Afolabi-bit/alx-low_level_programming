@@ -20,6 +20,7 @@ int _strlen_recursion(char *s)
 
 /**
  * _pal - checks the chars
+ * @s: string
  * @l: strlen
  * Return: xero 0r one
  */
@@ -36,12 +37,11 @@ int _pal(char *s, int l)
 /**
  * is_palindrome - checks if a string is a palindrome
  * @s: string
- * @i: iterator
  * Return: 1 for palindrome, 0 otherwise
  */
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
 
-	return (_pal(s, len -1));
+	return (_pal(s, len - 1));
 }
