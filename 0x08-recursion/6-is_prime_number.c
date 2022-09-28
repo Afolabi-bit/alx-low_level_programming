@@ -7,13 +7,15 @@
  */
 int is_prime_number(int n)
 {
+	int c = 2;
+
 	if (n <= 1)
 	{
 		return (0);
 	}
 	else
 	{
-		return (prime(n, 2));
+		return (prime(n, c));
 	}
 }
 
@@ -29,12 +31,12 @@ int prime(int n, int c)
 	{
 		return (1);
 	}
-	else if ((n % c) > 0)
+	else if ((n % c) == 0)
 	{
-		return (prime(n, c + 1));
+		return (0);
 	}
 	else
 	{
-		return (0);
+		return (prime(n, c + 1));
 	}
 }
