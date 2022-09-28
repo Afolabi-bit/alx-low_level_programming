@@ -26,13 +26,13 @@ This repo holds programs written for the low-level programming and algorithm sec
 
 #### Requirements
 	Working on this project requires 
-	* GCC: [GNU COmpiler](https://gcc.gnu.org)
-	* Betty: [C code documentation and styling checker](https://github.com/holbertonschool/Betty.git)
+	* GCC: [GNU COmpiler](https://gcc.gnu.org/)
+	* Betty: [C code documentation and styling checker](https://github.com/holbertonschool/Betty.git/)
 
 ## Author
 	* Afolabi Joseph
 
 ## Credits
 	This projects would be impossible without:
-	* [ALX Africa](https://www.alxafrica.com)
-	* [Holberton School](https://www.holbertonschool.com)
+	* [ALX Africa](https://www.alxafrica.com/)
+	* [Holberton School](https://www.holbertonschool.com/)
