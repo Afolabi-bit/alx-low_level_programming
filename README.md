@@ -26,7 +26,7 @@ This repo holds programs written for the low-level programming and algorithm sec
 
 #### Requirements
 	Working on this project requires 
-	* GCC: [GNU COmpiler](https://gcc.gnu.org/)
+	* GCC: [GNU COmpiler](/https://gcc.gnu.org/)
 	* Betty: [C code documentation and styling checker](https://github.com/holbertonschool/Betty.git/)
 
 ## Author
