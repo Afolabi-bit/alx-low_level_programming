@@ -1,6 +1,8 @@
 #include <unistd.h>
 
-int prime(int n, int c)
+/*
+ * int _prime(int n, int c)
+ */
 int sq(int num, int root);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);

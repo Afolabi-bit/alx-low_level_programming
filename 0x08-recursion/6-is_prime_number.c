@@ -5,38 +5,27 @@
  * @n: integer val
  * Return: 1 for true 0 for false
  */
+int _prime(int n, int c);
+
 int is_prime_number(int n)
 {
 	int c = 2;
 
-	if (n <= 1)
-	{
-		return (0);
-	}
-	else
-	{
-		return (prime(n, c));
-	}
+	return (_prime(n, c));
 }
 
 /**
- * prime - checks for prime num
+ * _prime - checks if n is divisible by numbers from 2 to n
  * @n: num
  * @c: check
- * Return: Zero or One
+ * Return: 1 for prime, 0 otherwise
  */
-int prime(int n, int c)
+int _prime(int n, int c)
 {
-	if (n == c)
-	{
+	if (c == n)
 		return (1);
-	}
-	else if ((n % c) == 0)
-	{
+	else if (n % c == 0 || n <= 0)
 		return (0);
-	}
 	else
-	{
-		return (prime(n, c + 1));
-	}
+		return (_prime(n, c + 1));
 }
