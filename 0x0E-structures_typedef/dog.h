@@ -1,4 +1,5 @@
-# include <unistd.h>
+#include <unistd.h>
+
 /**
  * struct dog - Info about a dog
  * @name: Dog name
