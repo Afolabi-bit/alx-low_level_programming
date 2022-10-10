@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
- 
 /**
  * _strlen - Gives length og string
  * @s: Param
