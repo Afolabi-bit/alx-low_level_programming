@@ -1,4 +1,5 @@
-#include <unistd.h>
+#ifndef _HEADER_
+#define _HEADER_
 
 /**
  * struct dog - Info about a dog
@@ -15,3 +16,5 @@ struct dog
 	float age;
 	char *owner;
 }
+
+#endif
