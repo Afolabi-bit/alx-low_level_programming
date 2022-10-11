@@ -25,15 +25,11 @@ int _strlen(char *s)
  * @n: Number of bytes
  * Return: Pointer to string, otherwise NULL
  */
- char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	int slen1, slen2, len, i, j;
+	int len, i, j;
 	int num = n;
-	
-	/* Get lengths of strings */
-	slen1 = _strlen(s1);
-	slen2 = _strlen(s2);
 
 	if (s1 == NULL)
 		s1 = "";
@@ -42,12 +38,11 @@ int _strlen(char *s)
 
 	if (num < 0)
 		return (NULL);
-	if (num >= slen2)
-		num = slen2;
+	if (num >= _strlen(s2))
+		num = _strlen(s2);
 
-	len = slen1 + num + 1;
+	len = _strlen(s1) + num + 1;
 
-	/* Allocate memory and check */
 	p = malloc(sizeof(*p) * len);
 	if (p == NULL)
 		return (NULL);
