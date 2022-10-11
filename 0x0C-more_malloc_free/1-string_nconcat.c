@@ -45,15 +45,15 @@ int _strlen(char *s)
 	if (num >= slen2)
 		num = slen2;
 
-	len = slen1 + slen2 + 1;
+	len = slen1 + num + 1;
 
 	/* Allocate memory and check */
-	p = malloc(len);
+	p = malloc(sizeof(*p) * len);
 	if (p == NULL)
 		return (NULL);
 
 	i = 0;
-	while (s1)
+	while (s1[i] != '\0')
 	{
 		p[i] = s1[i];
 		i++;
