@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * _calloc - allocates memory for an array using malloc
  * @nmemb: no of members
@@ -24,5 +25,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		p[i] = 0;
 		i++;
 	}
+
 	return (p);
 }
