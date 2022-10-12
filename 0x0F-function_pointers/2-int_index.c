@@ -2,9 +2,10 @@
 
 /**
  * int_index - searches for an integer
+ * @array: array of ints
  * @size: number of elements in array
  * @cmp: comparison function
-* Return: Index of first element for which the cmp function does not return 0
+ * Return: Index of first element for which the cmp function does not return 0
  * otherwise -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
