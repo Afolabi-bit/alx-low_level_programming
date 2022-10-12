@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * int_index - searches for an integer 
+ * int_index - searches for an integer
  * @size: number of elements in array
  * @cmp: comparison function
- * Return: Index of first element for which the cmp function does not return 0
+* Return: Index of first element for which the cmp function does not return 0
  * otherwise -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
@@ -21,7 +21,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			return (i);
 	}
 
-	if (i == size -1)
+	if (i == size - 1)
 		return (-1);
 	return (-1);
 }
