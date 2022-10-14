@@ -18,7 +18,7 @@ void print_all(const char *const format, ...)
 		j = 0;
 		while (f[j])
 		{
-			if (format[i] == f[j] && c)
+			if (format[i] == f[j] && c)/* c makes sure no separator before first arg */
 			{
 				printf(", ");
 			} j++;
