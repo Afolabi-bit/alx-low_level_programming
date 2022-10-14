@@ -94,14 +94,14 @@ julien@ubuntu:~/0x02$ cat 1-main.c
 #include "holberton.h"
 
 /**
-   * main - check the code for ALX School students.
-    *
-     * Return: Always 0.
-      */
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	    print_alphabet();
-	        return (0);
+	print_alphabet();
+	return (0);
 }
 julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet
 julien@ubuntu:~/0x02$ ./1-alphabet
@@ -133,13 +133,13 @@ julien@ubuntu:~/0x02$ cat 2-main.c
 
 /**
    * main - check the code for ALX School students.
-    *
-     * Return: Always 0.
-      */
+   *
+   * Return: Always 0.
+   */
 int main(void)
 {
-	    print_alphabet_x10();
-	        return (0);
+	print_alphabet_x10();
+	return (0);
 }
 julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
 julien@ubuntu:~/0x02$ ./2-alphabet_x10
@@ -183,21 +183,21 @@ julien@ubuntu:~/0x02$ cat 3-main.c
 
 /**
    * main - check the code for ALX School students.
-    *
-     * Return: Always 0.
-      */
+   *
+   * Return: Always 0.
+   */
 int main(void)
 {
-	    int r;
+	int r;
 
-	        r = _islower('H');
-		    _putchar(r + '0');
-		        r = _islower('o');
-			    _putchar(r + '0');
-			        r = _islower(108);
-				    _putchar(r + '0');
-				        _putchar('\n');
-					    return (0);
+	r = _islower('H');
+	_putchar(r + '0');
+	r = _islower('o');
+	_putchar(r + '0');
+	r = _islower(108);
+	_putchar(r + '0');
+	_putchar('\n');
+	return (0);
 }
 julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-islower.c -o 3-islower
 julien@ubuntu:~/0x02$ ./3-islower
@@ -237,18 +237,18 @@ julien@ubuntu:~/0x02$ cat 4-main.c
       */
 int main(void)
 {
-	    int r;
+	int r;
 
-	        r = _isalpha('H');
-		    _putchar(r + '0');
-		        r = _isalpha('o');
-			    _putchar(r + '0');
-			        r = _isalpha(108);
-				    _putchar(r + '0');
-				        r = _isalpha(';');
-					    _putchar(r + '0');
-					        _putchar('\n');
-						    return (0);
+	r = _isalpha('H');
+	_putchar(r + '0');
+	r = _isalpha('o');
+	_putchar(r + '0');
+	r = _isalpha(108);
+	_putchar(r + '0');
+	r = _isalpha(';');
+	_putchar(r + '0');
+	_putchar('\n');
+	return (0);
 }
 julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha
 julien@ubuntu:~/0x02$ ./4-isalpha
@@ -281,35 +281,37 @@ julien@ubuntu:~/0x02$ cat 5-main.c
 #include "holberton.h"
 
 /**
-   * main - check the code for ALX School students.
-    *
-     * Return: Always 0.
-      */
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	    int r;
+	int r;
 
-	        r = print_sign(98);
-		    _putchar(',');
-		        _putchar(' ');
-			    _putchar(r + '0');
-			        _putchar('\n');
-				    r = print_sign(0);
-				        _putchar(',');
-					    _putchar(' ');
-					        _putchar(r + '0');
-						    _putchar('\n');
-						        r = print_sign(0xff);
-							    _putchar(',');
-							        _putchar(' ');
-								    _putchar(r + '0');
-								        _putchar('\n');
-									    r = print_sign(-1);
-									        _putchar(',');
-										    _putchar(' ');
-										        _putchar(r + '0');
-											    _putchar('\n');
-											        return (0);
+        r = print_sign(98);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
+	
+	r = print_sign(0);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
+	
+	r = print_sign(0xff);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
+	r = print_sign(-1);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
+	return (0);
 }
 julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign
 julien@ubuntu:~/0x02$ ./5-sign
@@ -345,12 +347,12 @@ julien@ubuntu:~/0x02$ ./5-sign
 #include <stdio.h>
 
 	/**
-	   * main - check the code for ALX School students.
-	    *
-	     * Return: Always 0.
-	      */
+	 * main - check the code for ALX School students.
+	 *
+	 * Return: Always 0.
+	 */
 	int main(void)
-{
+	{
 	    int r;
 
 	        r = _abs(-1);
