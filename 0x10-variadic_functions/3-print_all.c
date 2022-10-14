@@ -11,7 +11,7 @@ void print_all(const char *const format, ...)
 	int i = 0, j, c;
 	char *s;
 	char f[] = "cifs";
-	
+
 	va_start(args, format);
 	while (format && format[i] != '\0')
 	{
@@ -23,7 +23,7 @@ void print_all(const char *const format, ...)
 				printf(", ");
 			} j++;
 		}
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(args, int)), c = 1;
