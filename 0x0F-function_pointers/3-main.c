@@ -8,30 +8,31 @@
  */
 int main(int argc, char **argv)
 {
-	int a, b;
-	char *s;
+	int (*oprt)(int, int);
 
-	if (argc < 4 || argc > 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	a = atoi(argv[1]);
-	s = argv[2];
-	b = atoi(argv[3]);
+	oprt = get_op_func(argv[2]);
 
-	if (!check_op)
+	if (!oprt)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((argv[2] == '/' || argv[2] == '%') && argv[3] == '0')
+	if ((argv[2] == '%' || argv[2] == '/') && (atoi(argv[3]) == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
+
+	int res = oprt(atoi(argv[1]), atoi(argv[3]));
+
+	printf("%d\n", res);
 
 	return (0);
 }
