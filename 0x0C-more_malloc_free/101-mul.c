@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - multiplies two positive integers
@@ -6,21 +6,30 @@
  * @argv: argument vector
  * Return: Zero for success
  */
-int main(argc, argv[])
+int main(int argc, char *argv[])
 {
-	unsigned int mul;
+	unsigned long mul;
+	int i, j;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (!(argc[1] >= 0) || !(argc[2] >= 0))
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		exit(98);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{
+				printf("Error\n");
+				exit(98);
+			}
+		}
 	}
-	mul = argc[1] * argc[2];
+
+	mul = atol(argv[1]) * atol(argv[2]);;
 	printf("%lu\n", mul);
 	return (0);
 }
