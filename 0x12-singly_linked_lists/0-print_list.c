@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		s = h->str;
 
 		num++;
-		if (h->str)
+		if (h->str != NULL)
 		{
 			_putchar('[');
 			_putchar(n + '0');
