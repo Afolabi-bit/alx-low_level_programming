@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * pop_listint - deletes the head node
@@ -21,5 +21,5 @@ int pop_listint(listint_t **head)
 
 	free(temp);
 
-	return (n)
+	return (n);
 }
