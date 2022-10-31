@@ -80,7 +80,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Author
 
-* **Afolabi** <[Afolabi-bit](https://github.com/Afolabi-bit)>
+* **Afolabi Joseph** <[Afolabi-bit](https://github.com/Afolabi-bit)>
 
 ## Aknowledgements
 
