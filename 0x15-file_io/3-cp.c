@@ -21,8 +21,7 @@ char *new_buffer(int size, char *file)
 
 /**
  * close_files - closes file descriptors
- * @file1: ...
- * @file2: ...
+ * @fd: ...
  * Return: void
  */
 void close_files(int fd)
