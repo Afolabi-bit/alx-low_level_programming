@@ -13,38 +13,40 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int count = 0;
 	dlistint_t *new, *temp;
 
-	/* Checks for an empty list with a given index */
-	if (!(*h) && idx != 0)
-		return (NULL);
-
-	/* Iterates to the node after which to add new node */
-	if (idx != 0)
-	{
-		temp = *h;
-		for (; count < idx - 1 && temp; count++)
-			temp = temp->next;
-		if (temp == NULL)
-			return (NULL);
-	}
-
-	/* Allocate memory for new node */
 	new = malloc(sizeof(dlistint_t));
-	if (!new)
+	/* Checks for an empty list with a given index */
+	if ((h == NULL && idx != 0) || new == NULL)
 		return (NULL);
-
 	new->n = n;
+	new->next = new->prev = NULL;
+	temp = *h;
 
-	/* checks if the index is zero inserts at the start */
+	/* add node at start if index = 0 */
 	if (idx == 0)
 	{
-		new->next = *h;
-		new->prev = NULL;
-		*h = new;
+		new = add_dnode(h, n);
 		return (new);
 	}
-	new->next = temp->next;
-	new->prev = temp;
-	temp->next = new;
-	return (new);
 
+	while (temp)
+	{
+		/* add node at end if temp->next = NULL */
+		if (temp->next == NULL && count == idx - 1)
+		{
+			new = add_dnodeint_end(h, n);
+			return (new);
+		}
+		else if ((idx - 1) == count)
+		{
+			new->next = temp->next;
+			new->prev = temp;
+			temp->next->prev = new;
+			temp_.next = new;
+			return (new);
+		}
+		count++;
+		temp = temp->next;
+	}
+	free(new);
+	return (NULL);
 }
