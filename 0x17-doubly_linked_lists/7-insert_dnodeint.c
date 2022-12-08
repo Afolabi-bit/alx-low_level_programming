@@ -2,6 +2,7 @@
 
 /**
  * insert_dnodeint_at_index -  inserts a new node at a given position
+ * @h: list head
  * @idx: index
  * @n: new data
  * Return: Address of new node at index idx
@@ -15,10 +16,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	/* Checks for an empty list with a given index */
 	if (!(*h) && idx != 0)
 		return (NULL);
-	
-	/* Iterates to the node after
-	 * which to add new node
-	 */
+
+	/* Iterates to the node after which to add new node */
 	if (idx != 0)
 	{
 		temp = *h;
@@ -35,9 +34,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	new->n = n;
 
-	/* checks if the index is zero,
-	 * inserts at the start
-	 */
+	/* checks if the index is zero inserts at the start */
 	if (idx == 0)
 	{
 		new->next = *h;
