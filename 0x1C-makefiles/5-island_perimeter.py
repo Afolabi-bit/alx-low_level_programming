@@ -9,9 +9,9 @@ def get_water_zone_count(grid, i, j):
         count += 1
     if j <= 0 or not grid[i][j - 1]:
         count += 1
-    if j >= len(grid[i]) - 1 or not grid[i + 1][j]:
+    if j >= len(grid[i]) - 1 or not grid[i][j + 1]:
         count += 1
-    if i >= len(grid) - 1 or not grid[i][j - 1]:
+    if i >= len(grid) - 1 or not grid[i + 1][j]:
         count += 1
     return count
 
