@@ -20,7 +20,7 @@ def island_perimeter(grid):
     """Iterates through island to get water zones(1s)"""
     perimeter = 0
     for i in range(len(grid)):
-        for j in range(len(grid)):
+        for j in range(len(grid[i])):
             if grid[i][j]:
                 perimeter += get_water_zone_count(grid, i, j)
     return perimeter
